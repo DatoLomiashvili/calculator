@@ -1,17 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: aliceblue;
+
 }
 
 button {
     font-size: 2rem;
-    height: 50px;
-    width: 50px;
+    font-weight: bold;
+
+    height: 75px;
+    width: 75px;
     color: mintcream;
     border: none;
     border-radius: 100%;
     cursor: pointer;
     transition: background-color 0.25s;
-    margin: 3px;
+    margin: 5px;
 }
 
 #operations button {
@@ -23,30 +32,29 @@ button {
 }
 
 #numbers button {
-    background-color: #b6b2b2;
+    background-color: #6b6868;
 }
 
 #numbers button:active {
-    background-color: rgba(182, 178, 178, 0.8);
-}
-
-#numbers #equalsButton {
-    background-color: #333131;
-}
-
-#numbers #equalsButton:active {
-    background-color: rgba(51, 49, 49, 0.9);
+    background-color: rgba(107, 104, 104, 0.8);
 }
 
 #calculator_container {
     display: flex;
     flex-direction: column;
-    max-width: 25vw;
+    max-width: 450px;
     align-items: center;
-    margin: auto;
+    margin: 30px auto auto;
+    overflow: hidden;
+
     #keys {
         display: flex;
-
+        column-gap: 15px;
+        width: 375px;
+        padding: 8px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #333131;
         #operations {
             display: flex;
             flex-direction: column;
@@ -55,8 +63,22 @@ button {
         #numbers {
             display: grid;
             height: 80%;
-            grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+            grid-template: repeat(4, 1fr) / repeat(3, 1fr);
         }
     }
+}
 
+input {
+    width: 375px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px 15px;
+
+    color: mintcream;
+    background-color: #6b6868;
+    border: none;
 }
