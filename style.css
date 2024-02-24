@@ -1,0 +1,62 @@
+body {
+    background-color: aliceblue;
+}
+
+button {
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    color: mintcream;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    margin: 3px;
+}
+
+#operations button {
+    background-color: darkorange;
+}
+
+#operations button:active {
+    background-color: rgba(255, 140, 0, 0.7);
+}
+
+#numbers button {
+    background-color: #b6b2b2;
+}
+
+#numbers button:active {
+    background-color: rgba(182, 178, 178, 0.8);
+}
+
+#numbers #equalsButton {
+    background-color: #333131;
+}
+
+#numbers #equalsButton:active {
+    background-color: rgba(51, 49, 49, 0.9);
+}
+
+#calculator_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 25vw;
+    align-items: center;
+    margin: auto;
+    #keys {
+        display: flex;
+
+        #operations {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #numbers {
+            display: grid;
+            height: 80%;
+            grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+        }
+    }
+
+}
