@@ -8,6 +8,10 @@ function clearDisplay() {
     display.value = '';
 }
 
+function clearCharacter() {
+    display.value = display.value.slice(0, -1);
+}
+
 function calculate() {
     try {
 

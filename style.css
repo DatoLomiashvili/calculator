@@ -31,6 +31,14 @@ button {
     background-color: rgba(255, 140, 0, 0.7);
 }
 
+#numbers button.orange {
+    background-color: darkorange;
+}
+
+#numbers button.orange:active {
+    background-color: rgba(255, 140, 0, 0.7);
+}
+
 #numbers button {
     background-color: #6b6868;
 }
